@@ -1,0 +1,9 @@
+---
+- name: fluentd + elasticsearch + kibana4 for CentOS 7.1 ver. 20150817
+  hosts: all
+  user: root
+  roles:
+    - { role: centos7-elasticsearch }
+    - { role: centos7-kibana41 }
+    - { role: centos7-fluentd }
+    - { role: centos7-fluentd-elasticsearch }
